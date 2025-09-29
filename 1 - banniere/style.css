@@ -35,6 +35,13 @@ Banniere cookies
     justify-content:space-between;
     opacity: 1;
     transition:1s;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+cookies.fade-out {
+    opacity: 0;
+    pointer-events: none;
 }
 .cookies-texte{
     padding: 1rem;
