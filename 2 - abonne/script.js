@@ -19,3 +19,23 @@ Nouvelles compétences:
 // 4. J'ecoute le clique sur l'icone smiley
 
 // 5. J'ecoute l'evenemment click sur le bouton ABONNEZ
+
+const smiley = document.querySelector("#emoji");
+const btnSub = document.querySelector(".btn-sub");
+
+
+smiley.addEventListener("click",() => {
+smiley.classList.toggle("face-slime"),
+smiley.classList.toggle("happy")
+});
+
+btnSub.addEventListener("click", () => {
+        btnSub.textContent = "ABONNER";        
+        btnSub.classList.toggle("subscribed");
+        btnSub.textContent = "Désabonner";
+        btnSub.style.backgroundColor = "yellow";
+        
+
+
+
+    });

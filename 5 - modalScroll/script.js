@@ -6,6 +6,7 @@
 // 1. Je recupere la section à partir de laquelle je veux faire apparaite la modale
 const section1 = document.querySelector(".one");
 
+
 // 2. Je recupere la modale
 const modal = document.querySelector(".modal");
 // 3. Je recupere le bouton quitter de la modale
@@ -24,6 +25,7 @@ modalQuit.addEventListener("click",function(){
 /**
  *  Fonction à passer en parametre de addEventListener("scroll",function)
  *  Obligatoire pour pouvoir utiliser removeEventListener(function)
+ * 
  */
 function onScrollDisplayModal(){
     console.log("Ouiiii je scroollll");

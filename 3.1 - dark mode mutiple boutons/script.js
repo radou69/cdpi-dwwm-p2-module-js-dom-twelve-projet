@@ -1,6 +1,15 @@
+const darkMSwitch = document.querySelectorAll("*");
+const toggleSwitch = document.querySelectorAll(".switch");
+const icons = document.querySelectorAll(".icon");
 
-//1. Je recupere tout les switchs
-
-//2. Je recupere tout les elements html de ma page
-
-//3. Je parcours tout les switchs
+toggleSwitch.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    icons.forEach((icon) => {
+      icon.classList.toggle("fa-sun");
+      icon.classList.toggle("fa-moon");
+    });
+    darkMSwitch.forEach((elem) => {
+      elem.classList.toggle("darkmode");
+    });
+  });
+});
